@@ -3,24 +3,25 @@
 #ifndef  GPIO_H_
 #define GPIO_H_
 #include "stm32f4xx.h"
+#include <stdbool.h>
 #include <stdint.h>
 typedef  enum {
     PIN_0 =0,
-	PIN_1,
-	PIN_2,
-	PIN_3,
-	PIN_4,
-	PIN_5,
-	PIN_6,
-	PIN_7,
-	PIN_8,
-	PIN_9,
-	PIN_10,
-	PIN_11,
-	PIN_12,
-	PIN_13,
-	PIN_14,
-	PIN_15,
+	PIN_1=1,
+	PIN_2=2,
+	PIN_3=3,
+	PIN_4=4,
+	PIN_5=5,
+	PIN_6=6,
+	PIN_7=7,
+	PIN_8=8,
+	PIN_9=9,
+	PIN_10=10,
+	PIN_11=11,
+	PIN_12=12,
+	PIN_13=13,
+	PIN_14=14,
+	PIN_15=15,
 }PIN_Typedef;
 typedef enum{
 AF0 = 0U,
@@ -57,4 +58,8 @@ void GPIO_init();
 void GPIO_config(GPIO_TypeDef* GPIOx, PIN_Typedef PIN_x,GPIO_function func);
 
 void GPIO_PIN_WRITE(GPIO_TypeDef* GPIOx, PIN_Typedef pinx,uint8_t state); 
+bool GPIO_PIN_READ(GPIO_TypeDef* GPIOx, PIN_Typedef pinx);
+
+
+
 #endif 

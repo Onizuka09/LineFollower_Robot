@@ -1,13 +1,14 @@
 # Source files
 C_SRCS += \
 	./Src/main.c \
-	./Src/led.c \
 	./Src/syscalls.c \
 	./Src/sysmem.c \
     ./Src/motor.c \
 	./Src/delay.c \
     ./Src/GPIO.c \
-	./Src/timer.c
+	./Src/timer.c \
+	./Src/LF_sensor.c \
+	./Src/USART2_Debug_dirver.c
 
 S_SRCS += \
 	./CMSIS/Startup/startup_stm32f401retx.s

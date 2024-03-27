@@ -1,7 +1,8 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 #include <stdint.h>
-#include"stm32f4xx.h"
+#include "stm32f4xx.h"
+
 
 void TIMER2_init(uint8_t prescaler, uint8_t period);
 void PWM_channel_1_config(TIM_TypeDef* TIMx);

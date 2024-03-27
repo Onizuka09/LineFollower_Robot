@@ -1,5 +1,7 @@
-compile_commands.json
-Build/
-.vscode/
-.ccls-cache/
-.cache/
+./compile_commands.json
+./Build/
+./.vscode/
+./.ccls-cache/
+./.cache/
+./Template_proj.bin
+./Template_proj.elf
